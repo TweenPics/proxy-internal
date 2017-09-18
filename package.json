@@ -1,0 +1,46 @@
+{
+    "main": "./index.js",
+    "dependencies": {
+        "fs-extra": "4.0.2",
+        "http-proxy": "1.16.2",
+        "karma-chrome-launcher": "2.2.0",
+        "karma-firefox-launcher": "1.0.1",
+        "request": "2.81.0",
+        "sharp": "0.18.3",
+        "uuid": "3.1.0",
+        "wires": "1.1.1"
+    },
+    "devDependencies": {
+        "eslint": "4.7.0",
+        "eslint-config-creative-area": "0.7.0"
+    },
+    "description": "This core module is used internally by both the command-line and GUI versions of the TweenPics proxy.",
+    "engines": {
+        "node": ">=8"
+    },
+    "eslintConfig": {
+        "extends": "creative-area/es8",
+        "env": {
+            "node": true
+        },
+        "rules": {
+            "global-require": "off",
+            "no-magic-numbers": "off",
+            "no-param-reassign": [
+                "error",
+                {
+                    "props": true,
+                    "ignorePropertyModificationsFor": [
+                        "response",
+                        "responseHeaders",
+                        "self"
+                    ]
+                }
+            ]
+        }
+    },
+    "license": "MIT",
+    "name": "@tweenpics/proxy-internal",
+    "repository": "tweenpics/proxy-internal",
+    "version": "0.1.0-pre"
+}
