@@ -7,8 +7,7 @@
         "karma-firefox-launcher": "1.0.1",
         "request": "2.81.0",
         "sharp": "0.18.3",
-        "uuid": "3.1.0",
-        "wires": "1.1.1"
+        "uuid": "3.1.0"
     },
     "devDependencies": {
         "eslint": "4.7.0",
